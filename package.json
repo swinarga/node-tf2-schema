@@ -1,29 +1,36 @@
 {
-  "name": "@tf2autobot/tf2-schema",
-  "version": "4.5.3",
-  "description": "Get information about TF2 items, effects, skins and more, originally made by Nicklason, modified by IdiNium.",
-  "main": "index.js",
-  "scripts": {
-    "lint": "eslint ./",
-    "release": "np --no-cleanup"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/TF2Autobot/node-tf2-schema.git"
-  },
-  "author": "Nicklas Marc Pedersen/IdiNium",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/TF2Autobot/node-tf2-schema/issues"
-  },
-  "homepage": "https://github.com/TF2Autobot/node-tf2-schema#readme",
-  "dependencies": {
-    "@tf2autobot/tf2-sku": "^2.0.4",
-    "async": "^3.2.6",
-    "axios": "^1.9.0",
-    "events": "^3.3.0",
-    "semver": "^7.6.3",
-    "util": "^0.12.5",
-    "vdf": "0.0.2"
-  }
+    "name": "@tf2autobot/tf2-schema",
+    "version": "4.5.3",
+    "description": "Get information about TF2 items, effects, skins and more, originally made by Nicklason, modified by IdiNium.",
+    "main": "index.js",
+    "scripts": {
+        "lint": "eslint ./",
+        "release": "np --no-cleanup"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/TF2Autobot/node-tf2-schema.git"
+    },
+    "author": "Nicklas Marc Pedersen/IdiNium",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/TF2Autobot/node-tf2-schema/issues"
+    },
+    "homepage": "https://github.com/TF2Autobot/node-tf2-schema#readme",
+    "dependencies": {
+        "@tf2autobot/tf2-sku": "^2.0.4",
+        "async": "^3.2.6",
+        "axios": "^1.9.0",
+        "events": "^3.3.0",
+        "semver": "^7.6.3",
+        "util": "^0.12.5",
+        "vdf": "0.0.2"
+    },
+    "devDependencies": {
+        "@eslint/eslintrc": "^3.3.3",
+        "@eslint/js": "^9.39.2",
+        "eslint": "^9.39.2",
+        "eslint-config-google": "^0.14.0",
+        "globals": "^17.0.0"
+    }
 }
