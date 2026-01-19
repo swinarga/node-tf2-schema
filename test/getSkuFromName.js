@@ -1,6 +1,8 @@
 const SchemaManager = require('../index.js');
 const readline = require('readline');
-const axios = require('axios');
+// const axios = require('axios');
+const fs = require('fs');
+const path = require('path');
 
 const rl = readline.createInterface({
     input: process.stdin,
@@ -8,15 +10,18 @@ const rl = readline.createInterface({
 });
 
 SchemaManager.prototype.getSchema = function (callback) {
-    axios
-        .get('https://schema.autobot.tf/schema')
-        .then(response => {
-            this.setSchema(response.data, true);
-            callback(null, this.schema);
-        })
-        .catch(function (err) {
-            callback(err);
-        });
+    // axios
+    //     .get('https://schema.autobot.tf/schema')
+    //     .then(response => {
+    //         this.setSchema(response.data, true);
+    //         callback(null, this.schema);
+    //     })
+    //     .catch(function (err) {
+    //         callback(err);
+    //     });
+    const data = fs.readFileSync(path.join(__dirname, '../schema.json'), { encoding: 'utf-8' });
+    this.setSchema(JSON.parse(data));
+    callback(null, this.schema);
 };
 
 // process.env.DEBUG_SCHEMA = 'true';
