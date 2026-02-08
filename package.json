@@ -6,7 +6,7 @@
     "scripts": {
         "lint": "eslint ./",
         "release": "np --no-cleanup",
-        "test": "node test/getSkuFromName.js"
+        "test": "DEBUG_SCHEMA=true node test/getSkuFromName.js"
     },
     "repository": {
         "type": "git",

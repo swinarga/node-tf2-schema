@@ -45,6 +45,7 @@ export default defineConfig([
             'operator-linebreak': 'off',
             'padded-blocks': 'off',
             'quote-props': 'off',
+            quotes: 'off',
             semi: 'off',
             'space-before-function-paren': 'off',
 
